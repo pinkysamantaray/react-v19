@@ -290,7 +290,7 @@ button:disabled {
   border-left: 1px solid var(--border);
   line-height: 1.5;
   text-align: center;
-  padding: 15px;
+  padding: 2rem 1rem;
 }
 
 .cart p {
@@ -319,9 +319,9 @@ button:disabled {
 .index-brand p {
   color: var(--secondary);
   font-weight: bold;
-  font-size: 40px;
+  font-size: 1.5rem;
   text-transform: uppercase;
-  max-width: 315px;
+  text-wrap: balance;
 }
 
 .index ul {
