@@ -388,6 +388,7 @@ tbody tr:last-of-type {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .pages > div {
@@ -470,6 +471,10 @@ td img {
   margin: 50px;
   font-weight: normal;
   font-size: 30px;
+}
+
+.contact-form {
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 768px) {
