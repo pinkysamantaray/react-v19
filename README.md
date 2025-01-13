@@ -12,16 +12,21 @@ npm install
 
 If we are doing first-principles methodology approach then we will start with no build tools or anything like that, just vanilla JavaScript and React, simply use
 
+```bash
 <script src="https://unpkg.com/react@18.3.1/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"></script>
+```
 
 and
-npx serve
-
-Otherwise install Vite
 
 ```bash
-npm start
+npx serve
+```
+
+Otherwise, install [Vite](https://vite.dev/guide/)
+
+```bash
+npm run dev
 ```
 
 ## Contributing
