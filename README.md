@@ -29,6 +29,14 @@ Otherwise, install [Vite](https://vite.dev/guide/)
 npm run dev
 ```
 
+## Server
+
+in the api folder, start the node server by
+
+```bash
+npm run start
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
