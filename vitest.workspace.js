@@ -17,7 +17,7 @@ export default defineWorkspace([
       name: "browser",
       browser: {
         enabled: true,
-        name: "chrome",
+        name: "chromium",
         // at least one instance is required
         instances: [{ browser: "chromium" }],
       },

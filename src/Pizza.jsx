@@ -1,4 +1,8 @@
 const Pizza = (props) => {
+  // uncomment this and see the test case is missing for this block and coverage report will show the uncovered line
+  // if (!props.name) {
+  //   return null;
+  // }
   return (
     <div className="pizza">
       <h1>{props.name}</h1>
