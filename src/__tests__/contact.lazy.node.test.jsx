@@ -4,6 +4,8 @@ import createFetchMock from "vitest-fetch-mock";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { Route } from "../routes/contact.lazy";
 
+const apiUrl = import.meta.env.VITE_API_URL;
+
 const queryClient = new QueryClient({});
 
 const fetchMocker = createFetchMock(vi);
@@ -41,8 +43,8 @@ test("can submit contact form", async () => {
 
   const requests = fetchMocker.requests();
   expect(requests.length).toBe(1);
-  expect(requests[0].url).toBe("/api/contact");
-  expect(fetchMocker).toHaveBeenCalledWith("/api/contact", {
+  expect(requests[0].url).toBe(`${apiUrl}/api/contact`);
+  expect(fetchMocker).toHaveBeenCalledWith(`${apiUrl}/api/contact`, {
     body: JSON.stringify(testData),
     headers: {
       "Content-Type": "application/json",
