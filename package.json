@@ -1,7 +1,7 @@
 {
-  "name": "reactv9",
+  "name": "react-v19",
   "version": "1.0.0",
-  "description": "Demo React App built with v9",
+  "description": "Demo React App built with v19",
   "main": "index.js",
   "scripts": {
     "build": "vite build",
