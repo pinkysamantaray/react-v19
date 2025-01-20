@@ -37,6 +37,12 @@ in the api folder, start the node server by
 npm run start
 ```
 
+## Deployment
+
+Details of deployment can be found [here](https://react-v9.holt.courses/lessons/whats-next/deploying-the-app).
+The Client app is deployed on Netlify: https://react-v19-demo.netlify.app/
+The Node.js Server API is deployed on Render: https://react-v19-demo.onrender.com/api/pizza-of-the-day
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
