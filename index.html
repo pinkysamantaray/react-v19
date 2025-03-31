@@ -6,6 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>React v9</title>
     <link rel="stylesheet" href="/style.css" />
+    <script>
+      function setRandomFavicon() {
+        // Create a canvas element
+        const canvas = document.createElement("canvas");
+        canvas.width = 32; // Favicon size is typically 32x32 pixels
+        canvas.height = 32;
+        const ctx = canvas.getContext("2d");
+
+        // Generate random color
+        const randomColor =
+          "#" + Math.floor(Math.random() * 16777215).toString(16);
+        ctx.fillStyle = randomColor;
+        ctx.fillRect(0, 0, 32, 32);
+
+        // Draw a random shape (optional)
+        const shape = Math.floor(Math.random() * 3); // 0: circle, 1: square, 2: triangle
+        ctx.fillStyle = "#fff"; // White shape
+        ctx.beginPath();
+        if (shape === 0) {
+          // Circle
+          ctx.arc(16, 16, 10, 0, 2 * Math.PI);
+        } else if (shape === 1) {
+          // Square
+          ctx.fillRect(11, 11, 20, 20);
+        } else {
+          // Triangle
+          ctx.moveTo(16, 6); // Top point
+          ctx.lineTo(6, 26); // Bottom-left
+          ctx.lineTo(26, 26); // Bottom-right
+          ctx.closePath(); // Close the path
+        }
+        ctx.fill();
+
+        // Create a link element for the favicon
+        let link = document.querySelector("link[rel~='icon']");
+        if (!link) {
+          link = document.createElement("link");
+          link.rel = "icon";
+          document.head.appendChild(link);
+        }
+        // Set the href of the link to the data URL of the canvas
+        link.href = canvas.toDataURL();
+      }
+
+      // Call the function when the page loads
+      window.onload = setRandomFavicon;
+    </script>
   </head>
   <body>
     <div id="modal"></div>
